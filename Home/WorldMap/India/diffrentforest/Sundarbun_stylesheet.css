@@ -1,0 +1,30 @@
+.main{
+    background-image: url(corozal-7469107_1920.jpg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(corozal-7469107_1920.jpg);
+    }
+    20%
+    {
+        background-image: url(images/kingfisher-4695419_1920.jpg);
+    }
+    40%
+    {
+        background-image: url(images/canoe-7101195.jpg);
+    }
+    60%
+    {
+        background-image: url(images/tiger-8356190.jpg);
+    }
+    80%
+    {
+        background-image: url(images/romania-2739007_1920.jpg);
+    }
+    100%
+    {
+        background-image: url(images/wood-bridge-4620942_1280.jpg);
+    }
+}

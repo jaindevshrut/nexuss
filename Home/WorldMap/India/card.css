@@ -1,0 +1,199 @@
+:root {
+    --primary-color: #1abc9c;
+    --secondary-color: #16a085;
+    --text-color: #ecf0f1;
+    --bg-color: #2c3e50;
+    --card-bg-color: #34495e;
+    --overlay-color: rgba(44, 62, 80, 0.7);
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(var(--overlay-color), var(--overlay-color)), url('https://source.unsplash.com/1600x900/?forest') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.container {
+  
+    padding-top: 69px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.container .boxes{
+    min-height: 100vh;
+}
+
+.Title{
+    padding-left: 100px;
+}
+
+.Title::before{
+    content: '💚';
+}
+
+
+.section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.card{
+    background: var(--card-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.area-percentage{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.area-percentage .information{
+    width: 100vb;
+}
+.info-piechart {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #48dbfb 0% 21.71%,
+        #ff9ff3 21.71% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-piechart::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--card-bg-color);
+}
+
+.info-piechart .progress-value{
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.text-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.text-info .imagebox1 {
+    width: 130%;
+}
+.text-info .imagebox1 img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li {
+    background:transparent;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.container li:hover {
+    transform: translateY(-5px);
+}
+
+.container li:first-child {
+    margin-top: 10px;
+}
+
+.container li::before {
+    content: '🌳';
+}
+
+.container .information1 li:first-child::before{
+    content:''
+}
+#economic-importance p{
+    font-size: 25px;
+}
+
+.container b{
+    color: var(--primary-color);
+}
+
+@media(max-width: 900px){
+.Title{
+    padding-left: 1px;
+}
+
+.area-percentage{
+    display: none;
+}
+.text-info{
+    flex-direction: column;
+}
+}
+

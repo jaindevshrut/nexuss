@@ -1,0 +1,30 @@
+.main{
+    background-image: url(images/south-india-2075399_1920.jpg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(images/hut-7032759_1920.jpg);
+    }
+    20%
+    {
+        background-image: url(images/pexels-fabianreitmeier-707915.jpg);
+    }
+    40%
+    {
+        background-image: url(images/pexels-kelly-1179532-2876511.jpg);
+    }
+    60%
+    {
+        background-image: url(images/munnar-4769654_1920.jpg);
+    }
+    80%
+    {
+        background-image: url(images/pexels-pixabay-414061.jpg);
+    }
+    100%
+    {
+        background-image: url(images/pexels-skitterphoto-240040.jpg);
+    }
+}
